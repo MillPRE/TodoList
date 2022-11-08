@@ -28,7 +28,11 @@ function deleteList(event){
 }
 
 function checkList(event){
-    console.log(event);
+    const target = event.path[1];
+    console.log(target);
+    target.setAttribute('class','cheked');
+    const check = target.children['check'];
+    target.removeChild(check);
 }
 
 function addTodo(text){
@@ -50,7 +54,7 @@ function addTodo(text){
     check.appendChild(textNode);
     check.setAttribute('id','check');
     check.addEventListener('click',function(event){
-        checkList(event.currentTarget);
+        checkList(event);
     });
 
     li.setAttribute('id',new String(numbering++));

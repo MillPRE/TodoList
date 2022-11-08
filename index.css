@@ -94,6 +94,11 @@ main{
     list-style-type: "🤍️";
 }
 
+#todo-list-ul .cheked{
+    list-style-type: "❤️️";
+    text-decoration: line-through;
+}
+
 #todo-list-ul li{
     padding-left : 10px;
     height : 30px;
@@ -114,4 +119,3 @@ main{
     right : 30px;
     cursor:pointer;
 }
-
