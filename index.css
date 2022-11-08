@@ -34,6 +34,9 @@ main{
 }
 
 .input-container{
+    width : auto;
+    height : 38px;
+    /*background-color: lightcyan;*/
     padding : 20px 19px 0 19px;
     display: flex;
     flex-direction: row;
@@ -43,7 +46,7 @@ main{
 .todo-input{
     margin-right : 19px;
     padding-left : 20px;
-    font-size : 12px;
+    font-size : 14px;
     color :#fff;
     width : 71%;
     height : 38px;
@@ -80,3 +83,24 @@ main{
     background: #fff;
     border : 2px solid #B6C9CA;
 }
+
+#todo-list-ul{
+    height : calc(100% - 78px);
+    margin : 0 19px 10px 19px;
+    padding-left :20px;
+    padding-top : 20px;
+
+    overflow-y: scroll;
+    list-style-type: "🤍️";
+}
+
+#todo-list-ul li{
+    padding-left : 10px;
+    height : 30px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom : 20px;
+}
+
+
