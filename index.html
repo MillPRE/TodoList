@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./favicon.png">
     <link rel="stylesheet" href="./index.css" />
     <title>TODOLIST</title>
 </head>
@@ -9,9 +10,16 @@
     <main>
         <h1><a class="logo" href="/">TODO LIST</a></h1>
         <div class="todo-container">
+            <div class="input-container">
+                <input id="todo" onkeydown="onEnter(event)" class="todo-input" type="text" placeholder="오늘의 할일..."/>
+                <button onclick="onClick(event)" class="todo-submit" type="submit">등록</button>
+            </div>
+            <ul>
 
+            </ul>
         </div>
 
     </main>
+<script src="index.js"></script>
 </body>
 </html>
